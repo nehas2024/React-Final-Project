@@ -19,7 +19,8 @@ const RegisterStepOne = ({ handleNext }) => {
         >
             <div className="bg-black bg-opacity-80 min-h-screen px-4 py-6 flex flex-col">
                 <Header />
-                <div className="flex-grow flex items-center justify-center">
+                {/* Add mt-16 to push the main content down */}
+                <div className="flex-grow flex items-center justify-center mt-16">
                     <div className="max-w-xl w-full bg-[rgba(255,255,255,0.2)] backdrop-blur-md rounded-lg p-6">
                         {/* Step Indicators */}
                         <div className="flex justify-center space-x-6 mb-6">
