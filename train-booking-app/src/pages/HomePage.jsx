@@ -2,7 +2,7 @@
 import React from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom'; // Import Link
 
 function HomePage() {
     const navigate = useNavigate();
@@ -25,7 +25,7 @@ function HomePage() {
                 <div className="container mx-auto relative z-10">
                     <h1 className="text-5xl font-bold mb-4">Welcome to Van Lang Tour</h1>
                     <p className="text-xl text-gray-300 mb-6">Discover amazing train tours.</p>
-                    <button className="bg-yellow-500 text-black px-6 py-3 rounded-full hover:bg-yellow-600">Explore Tours</button>
+                    <Link to="/tours" className="bg-yellow-500 text-black px-6 py-3 rounded-full hover:bg-yellow-600">Explore Tours</Link>
                 </div>
             </section>
 

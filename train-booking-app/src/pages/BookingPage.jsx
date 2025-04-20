@@ -1,5 +1,5 @@
 // src/pages/BookingPage.jsx
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
@@ -17,13 +17,17 @@ function BookingPage() {
 
     const handleSearch = () => {
         console.log('Searching with:', { keywords, activity, destination, date });
-        // Implement your actual search logic here to update searchResults
+        // Implement your actual search logic here
     };
+
+    useEffect(() => {
+        console.log('Current window.location.pathname:', window.location.pathname);
+    }, []);
 
     return (
         <div className="bg-gray-900 text-white min-h-screen flex flex-col">
             {/* Fixed Background */}
-            <div className="fixed top-0 left-0 w-full h-full -z-10 bg-[url('/images/train-station.jpg')] bg-cover bg-center">
+            <div className="fixed top-0 left-0 w-full h-full -z-10 bg-cover bg-center" style={{ backgroundImage: `url(\${import.meta.env.BASE_URL}images/train-station.jpg)` }}>
                 <div className="absolute inset-0 bg-black bg-opacity-60"></div>
             </div>
 
