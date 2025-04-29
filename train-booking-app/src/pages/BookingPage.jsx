@@ -27,7 +27,7 @@ function BookingPage() {
     return (
         <div className="bg-gray-900 text-white min-h-screen flex flex-col">
             {/* Fixed Background */}
-            <div className="fixed top-0 left-0 w-full h-full -z-10 bg-cover bg-center" style={{ backgroundImage: `url(\${import.meta.env.BASE_URL}images/train-station.jpg)` }}>
+            <div className="fixed top-0 left-0 w-full h-full -z-10 bg-cover bg-center bg-[url('/images/train-1.jpg')]">
                 <div className="absolute inset-0 bg-black bg-opacity-60"></div>
             </div>
 
