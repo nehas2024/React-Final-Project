@@ -7,6 +7,8 @@ import BookingPage from './pages/BookingPage';
 import LoginPage from './pages/LoginPage';
 import RegisterStepOne from './pages/RegisterPage';
 import TourDetailsPage from './pages/TourDetailsPage';
+import PaymentPage from './pages/PaymentPage';
+import PaymentConfirmationPage from './pages/PaymentConfirmationPage';
 
 function App() {
     return (
@@ -19,6 +21,8 @@ function App() {
                 <Route path="/booking" element={<BookingPage />} />
                 <Route path="/login" element={<LoginPage />} />
                 <Route path="/register" element={<RegisterStepOne />} />
+                <Route path="/payment" element={<PaymentPage />} />
+                <Route path="/payment-confirmation" element={<PaymentConfirmationPage />} />
             </Routes>
         </Router>
     );
